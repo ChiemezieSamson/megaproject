@@ -43,12 +43,12 @@ const Navigation = () => {
         </form>
       </section>
 
-      <nav className="mainColor">
+      <nav className="mainColor mt-10">
         <ul className="grid grid-flow-col px-5 py-2 text-center max-w-5xl mx-auto">
           {navLink.map((link) => {
 
             return (
-              <li key={link.id} className="text-white font-lora font-medium text-2xl uppercase tracking-wider">
+              <li key={link.id} className="text-white font-lora font-medium text-sm sm:text-base md:text-2xl uppercase tracking-wider">
                 <Link to={"/"}>{link.name}</Link>
               </li>
             )
