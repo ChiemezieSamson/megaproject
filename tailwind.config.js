@@ -1,13 +1,20 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
+// const defaultTheme = require('tailwindcss/defaultTheme')
 
 
 export default {
 	content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-	darkMode: "class",
+	darkMode: 'class',
 	corePlugins: {
 		preflight: true,
 	},
 	theme: {
+		screens: {
+			xx: "300px",
+			xs: "466px",
+			...defaultTheme.screens,
+		},
 		extend: {
 			fontFamily: {
 				round: ["Varela Round", "sans-serif"],

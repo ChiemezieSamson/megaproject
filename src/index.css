@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply m-0 p-0 bg-white
+    @apply m-0 p-0 dark:Bg_Dark dark:Dark_text text Bg_Light
   }
 
   img {
@@ -33,7 +33,43 @@
 
 
 @layer utilities{
-  .mainColor {
-    @apply bg-[#57068c];
+  .Bg_Dark {
+    @apply bg-[#0d1117]
+  }
+
+  .Bg_Dark_Soft {
+    @apply bg-slate-900
+  }
+
+  .Bg_Light {
+    @apply bg-white
+  }
+
+  .Dark_Color {
+    @apply bg-[#903189];
+  }
+
+  .Dark_Color_Soft {
+    @apply bg-[#a35ba0]
+  }
+
+  .Light_Color {
+    @apply bg-[#0e2f6c];
+  }
+
+  .Light_Color_Soft {
+    @apply bg-[#3a4b84]
+  }
+
+  .text {
+    @apply text-stone-300
+  }
+
+  .Dark_text {
+    @apply  text-stone-900
+  }
+
+  .Light_Border {
+    @apply border-solid border-white
   }
 }

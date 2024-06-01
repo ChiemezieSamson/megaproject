@@ -1,9 +1,13 @@
+
 import Navigation from "./Navigation/Navigation"
+import TopbarProps from "./TopbarProps/TopbarProps"
 
 
 const Index = () => {
+
   return (
-    <div className="max-w-[1600px] mx-auto ">
+    <div className=" ">
+      <TopbarProps />
       <Navigation />
       
     </div>
